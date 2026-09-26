@@ -1,0 +1,83 @@
+# Holt jeden Montag früh neue Daten von Leetify, speichert sie im Repo
+# und veröffentlicht die Seite auf GitHub Pages.
+# Manuell starten: Actions → "Stats aktualisieren" → "Run workflow".
+
+name: Stats aktualisieren
+
+on:
+  schedule:
+    - cron: '37 4 * * 1'   # Montag 04:37 UTC (= 05:37 Winterzeit / 06:37 Sommerzeit)
+  workflow_dispatch:        # Knopf "Run workflow"
+  push:
+    branches: [main]        # Seite neu veröffentlichen, wenn du etwas änderst
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: stats-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    outputs:
+      fetch_ok: ${{ steps.fetch.outcome != 'failure' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Daten von Leetify holen
+        id: fetch
+        if: github.event_name != 'push'
+        continue-on-error: true   # Bei Fehler: alte Daten bleiben, Seite wird trotzdem veröffentlicht
+        env:
+          LEETIFY_API_KEY: ${{ secrets.LEETIFY_API_KEY }}
+        run: node scripts/fetch.mjs
+
+      # Speichert den neuen Snapshot (oder den Fehlerstatus). Dieser wöchentliche
+      # Commit sorgt auch dafür, dass GitHub den Zeitplan nicht wegen Inaktivität pausiert.
+      - name: Neue Daten speichern
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/history.json
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen."
+          else
+            git commit -m "Stats-Update $(date -u +%Y-%m-%d)"
+            git pull --rebase && git push
+          fi
+
+      - name: Seite für GitHub Pages vorbereiten
+        run: |
+          mkdir -p _site
+          cp -r index.html style.css app.js data _site/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+      # Markiert den Lauf als fehlgeschlagen (rotes X + E-Mail von GitHub),
+      # wenn der Abruf nicht geklappt hat – die alte Seite bleibt trotzdem online.
+      - name: Abruf fehlgeschlagen?
+        if: needs.update.outputs.fetch_ok != 'true'
+        run: |
+          echo "::error::Der Abruf von Leetify ist fehlgeschlagen. Details im Schritt 'Daten von Leetify holen'."
+          exit 1

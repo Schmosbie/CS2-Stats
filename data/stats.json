@@ -1,0 +1,47 @@
+{
+ "_hilfe": "Liste aller Stats, die die Seite anzeigt. Erklärung der Felder: siehe README.md, Abschnitt 'Einen Stat hinzufügen'.",
+ "overview": ["premier", "leetify", "winrate", "kd", "adr", "hs"],
+ "stats": {
+  "premier":        { "label": "Premier-Rating", "group": "overview", "format": "int", "better": "high", "profile": "ranks.premier" },
+  "leetify":        { "label": "Leetify-Rating", "group": "overview", "format": "rating", "better": "high", "match": "leetify_rating", "desc": "Durchschnitt deines Leetify-Ratings pro Match" },
+  "winrate":        { "label": "Winrate", "group": "overview", "format": "pct", "better": "high", "match": { "type": "winrate" } },
+  "kd":             { "label": "K/D", "group": "overview", "format": "dec2", "better": "high", "match": { "num": "total_kills", "den": "total_deaths" } },
+  "adr":            { "label": "ADR", "group": "overview", "format": "dec1", "better": "high", "match": { "num": "total_damage", "den": "rounds_count" }, "desc": "Schaden pro Runde" },
+  "hs":             { "label": "HS %", "group": "overview", "format": "pct", "better": "high", "match": { "num": "total_hs_kills", "den": "total_kills" }, "desc": "Anteil deiner Kills per Headshot" },
+
+  "aim":            { "label": "Aim", "group": "core", "format": "dec1", "better": "high", "profile": "rating.aim" },
+  "positioning":    { "label": "Positioning", "group": "core", "format": "dec1", "better": "high", "profile": "rating.positioning" },
+  "utility":        { "label": "Utility", "group": "core", "format": "dec1", "better": "high", "profile": "rating.utility" },
+  "clutch":         { "label": "Clutch", "group": "core", "format": "rating", "better": "high", "profile": "rating.clutch" },
+  "opening":        { "label": "Opening", "group": "core", "format": "rating", "better": "high", "profile": "rating.opening" },
+  "ct_rating":      { "label": "CT-Rating", "group": "core", "format": "rating", "better": "high", "profile": "rating.ct_leetify", "match": "ct_leetify_rating" },
+  "t_rating":       { "label": "T-Rating", "group": "core", "format": "rating", "better": "high", "profile": "rating.t_leetify", "match": "t_leetify_rating" },
+
+  "reaction":       { "label": "Reaktionszeit", "group": "aim", "format": "ms", "better": "low", "profile": "stats.reaction_time_ms", "match": "reaction_time", "desc": "Zeit vom Sehen des Gegners bis zum Treffer" },
+  "preaim":         { "label": "Crosshair Placement", "group": "aim", "format": "deg", "better": "low", "profile": "stats.preaim", "match": "preaim", "desc": "Leetify 'Preaim': wie weit dein Fadenkreuz beim Sichtkontakt vom Gegner entfernt ist (Grad)" },
+  "spray":          { "label": "Spray-Genauigkeit", "group": "aim", "format": "pct", "better": "high", "profile": "stats.spray_accuracy", "match": "spray_accuracy" },
+  "counterstrafe":  { "label": "Counter-Strafing", "group": "aim", "format": "pct", "better": "high", "profile": "stats.counter_strafing_good_shots_ratio", "match": "counter_strafing_shots_good_ratio", "desc": "Anteil der Schüsse, bei denen du sauber gestoppt hast" },
+  "acc_spotted":    { "label": "Treffer bei Sichtkontakt", "group": "aim", "format": "pct", "better": "high", "profile": "stats.accuracy_enemy_spotted", "match": "accuracy_enemy_spotted" },
+  "acc_head":       { "label": "Kopftreffer-Genauigkeit", "group": "aim", "format": "pct", "better": "high", "profile": "stats.accuracy_head", "match": "accuracy_head", "desc": "Anteil deiner Treffer, die den Kopf treffen" },
+
+  "blinded":        { "label": "Geblendete Gegner pro Match", "group": "utility", "format": "dec1", "better": "high", "match": "flashbang_hit_foe" },
+  "flash_eff":      { "label": "Gegner geblendet pro Flash", "group": "utility", "format": "dec2", "better": "high", "profile": "stats.flashbang_hit_foe_per_flashbang", "match": { "num": "flashbang_hit_foe", "den": "flashbang_thrown" } },
+  "flash_duration": { "label": "Blenddauer pro Gegner", "group": "utility", "format": "sec", "better": "high", "profile": "stats.flashbang_hit_foe_avg_duration", "match": "flashbang_hit_foe_avg_duration" },
+  "flash_kills":    { "label": "Flashes, die zu Kills führen (pro Match)", "group": "utility", "format": "dec2", "better": "high", "match": "flashbang_leading_to_kill" },
+  "flash_assists":  { "label": "Flash-Assists pro Match", "group": "utility", "format": "dec2", "better": "high", "match": "flash_assist" },
+  "team_flash":     { "label": "Teammates geblendet pro Flash", "group": "utility", "format": "dec2", "better": "low", "profile": "stats.flashbang_hit_friend_per_flashbang", "match": { "num": "flashbang_hit_friend", "den": "flashbang_thrown" } },
+  "he_damage":      { "label": "HE-Schaden an Gegnern", "group": "utility", "format": "dec1", "better": "high", "profile": "stats.he_foes_damage_avg", "match": "he_foes_damage_avg", "desc": "Durchschnittlicher Schaden pro HE-Granate" },
+  "he_team":        { "label": "HE-Schaden an Teammates", "group": "utility", "format": "dec1", "better": "low", "profile": "stats.he_friends_damage_avg", "match": "he_friends_damage_avg" },
+  "util_death":     { "label": "Ungenutzte Utility beim Tod", "group": "utility", "format": "dec1", "better": "low", "profile": "stats.utility_on_death_avg", "match": "utility_on_death_avg", "desc": "Wert der Granaten, die du beim Sterben noch hattest" },
+
+  "trade_kills":    { "label": "Trade-Kills", "group": "teamplay", "format": "pct", "better": "high", "profile": "stats.trade_kills_success_percentage", "match": { "num": "trade_kills_succeed", "den": "trade_kill_opportunities" }, "desc": "Wie oft du einen gefallenen Teammate zurückholst, wenn du die Chance hast" },
+  "traded_deaths":  { "label": "Getradete Tode", "group": "teamplay", "format": "pct", "better": "high", "profile": "stats.traded_deaths_success_percentage", "match": { "num": "traded_deaths_succeed", "den": "traded_death_opportunities" }, "desc": "Wie oft dein Tod von einem Teammate getradet wird" },
+  "trade_opps":     { "label": "Trade-Chancen pro Runde", "group": "teamplay", "format": "dec2", "better": "high", "profile": "stats.trade_kill_opportunities_per_round", "match": "trade_kill_opportunities_per_round" },
+
+  "ct_opening":     { "label": "Opening-Duelle CT", "group": "positioning", "format": "pct", "better": "high", "profile": "stats.ct_opening_duel_success_percentage" },
+  "t_opening":      { "label": "Opening-Duelle T", "group": "positioning", "format": "pct", "better": "high", "profile": "stats.t_opening_duel_success_percentage" },
+  "ct_aggression":  { "label": "Opening-Aggression CT (Erfolg)", "group": "positioning", "format": "pct", "better": "high", "profile": "stats.ct_opening_aggression_success_rate" },
+  "t_aggression":   { "label": "Opening-Aggression T (Erfolg)", "group": "positioning", "format": "pct", "better": "high", "profile": "stats.t_opening_aggression_success_rate" },
+  "survived":       { "label": "Überlebte Runden", "group": "positioning", "format": "pct", "better": "high", "match": { "num": "rounds_survived", "den": "rounds_count" } }
+ }
+}

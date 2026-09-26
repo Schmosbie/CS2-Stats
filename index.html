@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2 Stats</title>
+  <meta name="description" content="Meine CS2-Statistiken von Leetify – wöchentlich aktualisiert">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="logo">CS2</span>
+      <div>
+        <h1 id="player-name">Meine Stats</h1>
+        <p class="updated" id="updated">Lade Daten …</p>
+      </div>
+    </div>
+    <div id="error-banner" class="banner" hidden></div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="overview" aria-selected="true">Übersicht</button>
+    <button role="tab" data-tab="core">Kernwerte</button>
+    <button role="tab" data-tab="details">Detail-Stats</button>
+    <button role="tab" data-tab="maps">Maps</button>
+    <button role="tab" data-tab="tips">Tipps</button>
+  </nav>
+
+  <main>
+    <section id="tab-overview" class="tab" role="tabpanel">
+      <div class="kpis" id="kpis"></div>
+      <div class="card" id="summary"></div>
+      <div class="card">
+        <h2>Letzte Matches</h2>
+        <div class="table-wrap"><table id="recent-matches"></table></div>
+      </div>
+    </section>
+
+    <section id="tab-core" class="tab" role="tabpanel" hidden>
+      <p class="note" id="core-note"></p>
+      <div class="charts" id="core-charts"></div>
+    </section>
+
+    <section id="tab-details" class="tab" role="tabpanel" hidden>
+      <p class="note">Die großen Zahlen sind der Durchschnitt deiner Matches der letzten 7 Tage. Der Pfeil zeigt die Veränderung zur Woche davor.
+        Wo Leetify einen eigenen Profilwert liefert, steht er klein darunter. Das Diagramm zeigt einen Punkt pro Woche.</p>
+      <div id="detail-groups"></div>
+    </section>
+
+    <section id="tab-maps" class="tab" role="tabpanel" hidden>
+      <p class="note">Berechnet aus allen gespeicherten Matches.</p>
+      <div class="map-grid" id="map-grid"></div>
+    </section>
+
+    <section id="tab-tips" class="tab" role="tabpanel" hidden>
+      <p class="note" id="tips-note"></p>
+      <h2 class="section-title">Deine 3 schwächsten Werte</h2>
+      <div class="tip-list" id="tips-weak"></div>
+      <h2 class="section-title">Am stärksten gefallen</h2>
+      <div class="tip-list" id="tips-drop"></div>
+    </section>
+  </main>
+
+  <footer>
+    Daten: <a href="https://leetify.com" target="_blank" rel="noopener">Leetify</a> (Public API) ·
+    <a id="leetify-profile" href="https://leetify.com" target="_blank" rel="noopener">Mein Leetify-Profil</a>
+  </footer>
+</body>
+</html>

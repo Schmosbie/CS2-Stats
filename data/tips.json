@@ -1,0 +1,188 @@
+{
+ "_hilfe": "Trainingstipps pro Stat. Der Schlüssel (z. B. \"preaim\") muss genauso heißen wie in data/stats.json. Du kannst beliebig viele Tipps pro Stat ergänzen – die Seite zeigt die ersten 3.",
+ "_default": [
+  "Schau dir eine Demo deines letzten verlorenen Matches an und notiere 3 Situationen, in denen dieser Wert eine Rolle gespielt hat.",
+  "Nimm dir für die nächsten 5 Matches genau dieses eine Thema vor – nicht mehrere gleichzeitig."
+ ],
+
+ "leetify": [
+  "Das Leetify-Rating misst deinen Einfluss auf Rundengewinne. Öffne bei Leetify dein schlechtestes Match der Woche und schau, in welchen Runden du negativ warst.",
+  "Weniger sterben ohne Trade: Spiele Positionen, an denen ein Teammate dich traden kann.",
+  "Demo-Review: Achte auf Runden, in denen du früh stirbst, ohne Schaden zu machen."
+ ],
+ "winrate": [
+  "Spielt feste Rollen und Standard-Setups pro Map mit deinen Freunden, statt jede Runde zu improvisieren.",
+  "Nach zwei verlorenen Matches in Folge: Pause machen, statt auf Tilt weiterzuspielen.",
+  "Demo-Review im Team: Schaut euch gemeinsam 3 verlorene Runden an – was war der Plan, und wo ist er gescheitert?"
+ ],
+ "kd": [
+  "Nimm weniger unnötige Duelle: Wenn du Info hast, gib sie weiter und warte auf einen Trade, statt allein zu peeken.",
+  "Wärm dich vor jedem Match 10–15 Minuten im Deathmatch auf.",
+  "Demo-Review: Markiere jeden Tod und frag dich, ob er vermeidbar war (Position, Timing, Wide-Peek)."
+ ],
+ "adr": [
+  "Schieß öfter durch Smokes und Wallbangs auf bekannte Positionen, wenn Gegner gespottet sind.",
+  "Wirf HE-Granaten und Molotovs auf Stack-Positionen – Utility-Schaden zählt voll mit.",
+  "Bleib im Spiel, auch wenn du einen Kill hast: Such das zweite Duell, statt dich zurückzuziehen."
+ ],
+ "hs": [
+  "Workshop-Map 'Aim Botz': 500 Kills nur Kopf, Fadenkreuz immer auf Kopfhöhe halten.",
+  "Deathmatch mit Headshot-Only-Modus (z. B. auf Community-Servern) für 10 Minuten am Tag.",
+  "Demo-Review: Wo zeigt dein Fadenkreuz beim Laufen? Oft ist es zu tief (Richtung Boden)."
+ ],
+
+ "aim": [
+  "Tägliches Aim-Warm-up: 10 Minuten Aim Botz, dann 10 Minuten Deathmatch.",
+  "Konzentriere dich auf Crosshair Placement und Counter-Strafing statt auf Flicks – die sind die Basis für Leetifys Aim-Wert.",
+  "Spiel Deathmatch nur mit einer Waffe (AK oder M4), damit sich der Spray einprägt."
+ ],
+ "positioning": [
+  "Wechsle nach einem Kill die Position, statt denselben Winkel noch einmal zu halten.",
+  "Spiele Positionen, an denen dich ein Teammate traden kann – nicht isoliert.",
+  "Demo-Review: Pausiere vor jedem Tod und frag dich, von wie vielen Winkeln du gleichzeitig sichtbar warst."
+ ],
+ "utility": [
+  "Lerne pro Map 2 Smokes und 2 Flashes für deine Stamm-Position (z. B. über yprac-Maps oder YouTube-Lineup-Videos).",
+  "Wirf vor dem Sterben deine Utility: Kaufe nur, was du auch einsetzt.",
+  "Übe Lineups in einem privaten Match mit 'sv_cheats 1' und 'sv_grenade_trajectory_prac_pipreview 1'."
+ ],
+ "clutch": [
+  "In Clutches: erst Info sammeln (Sound, Minimap), dann Duelle einzeln isolieren.",
+  "Nutze die Zeit: Wer ruhig bleibt und auf Gegner-Fehler wartet, gewinnt mehr 1vX.",
+  "Demo-Review: Schau dir deine verlorenen Clutches aus Gegner-Sicht an (Demo-Kamera wechseln)."
+ ],
+ "opening": [
+  "Entry nur mit Flash oder Trade-Partner direkt hinter dir.",
+  "Pre-Aim die gängigen Positionen: yprac-Prefire-Maps für deine Maps spielen.",
+  "Wenn deine Opening-Duelle schlecht laufen, übernimm öfter die Rolle als zweiter Spieler (Trader)."
+ ],
+ "ct_rating": [
+  "Auf CT: Spiel nicht jede Runde dieselbe Position gleich – variiere Winkel und Timing.",
+  "Nutze Utility zum Verzögern (Molotov auf Rush-Wege), statt nur zu schießen.",
+  "Demo-Review: Wie oft hast du nach dem ersten Kontakt rotiert, obwohl du hättest halten sollen?"
+ ],
+ "t_rating": [
+  "Auf T: Plant pro Map 2–3 einfache Executes mit festen Smokes/Flashes.",
+  "Spiel nicht zu früh allein Lurk – bleib in Trade-Reichweite.",
+  "Demo-Review: In welchen T-Runden seid ihr ohne Plan in eine Site gelaufen?"
+ ],
+
+ "reaction": [
+  "Deine Reaktionszeit hängt stark vom Crosshair Placement ab: Wenn das Fadenkreuz schon richtig sitzt, musst du nur klicken.",
+  "Spiel ausgeschlafen und mit stabilen FPS – Müdigkeit und Ruckler kosten mehr ms als alles andere.",
+  "Workshop-Map 'Aim Botz' mit schnellen Bots oder Reaktionstrainer (z. B. 'Fast Aim / Reflex Training') für 10 Minuten."
+ ],
+ "preaim": [
+  "Halte das Fadenkreuz beim Laufen immer auf Kopfhöhe und an der Kante, an der ein Gegner auftauchen kann.",
+  "yprac-Prefire-Maps für deine Stamm-Maps: Positionen auswendig lernen und vorzielen.",
+  "Demo-Review in Zeitlupe (0,25x): Wo zeigt dein Fadenkreuz eine halbe Sekunde, bevor ein Gegner auftaucht?"
+ ],
+ "spray": [
+  "Workshop-Map 'Recoil Master – Spray Training': AK- und M4-Spray jeden Tag 5 Minuten.",
+  "Im Deathmatch bewusst die ersten 5–10 Kugeln kontrollieren, nicht den ganzen Spray.",
+  "Schieß lieber in Bursts (3–5 Kugeln) auf größere Distanz."
+ ],
+ "counterstrafe": [
+  "Übung auf einer leeren Map: A-D-A-D laufen, jeweils kurz die Gegentaste tippen und dann schießen. Einschusslöcher müssen genau sitzen.",
+  "Im Deathmatch nur mit Counter-Strafe schießen, nie im Laufen – auch wenn es anfangs langsamer ist.",
+  "Tipp: Mit 'cl_showpos 1' siehst du, wann deine Geschwindigkeit wirklich auf 0 ist."
+ ],
+ "acc_spotted": [
+  "Weniger Panik-Spray: Erst stoppen, dann schießen (Counter-Strafing).",
+  "Auf mittlere Distanz tappen oder bursten statt voll sprayen.",
+  "Aim Botz: Bots in Bewegung treffen, dabei nach jedem Schuss kurz stoppen."
+ ],
+ "acc_head": [
+  "Fadenkreuz auf Kopfhöhe halten – das ist der wichtigste Hebel für Kopftreffer.",
+  "Aim Botz: Nur Kopf-Kills zählen, 3 Serien à 100 Kills.",
+  "Beim Spray das Fadenkreuz nicht nach oben wandern lassen: Recoil Master üben."
+ ],
+
+ "blinded": [
+  "Lerne 2 Pop-Flashes für deine Stamm-Position pro Map.",
+  "Werft Flashes für Teammates, bevor sie peeken ('Ich flash dich rein').",
+  "Übe Flashes in einem privaten Match mit Bots: Treffen die Bots-Positionen?"
+ ],
+ "flash_eff": [
+  "Wirf Flashes über Kanten (Pop-Flash), damit Gegner sie nicht wegdrehen können.",
+  "Nutze Rechtsklick- oder Links+Rechts-Würfe für kurze Distanzen.",
+  "Demo-Review: Wohin schauen die Gegner, wenn deine Flash explodiert?"
+ ],
+ "flash_duration": [
+  "Flashes, die hinter Gegnern explodieren, blenden kaum – lass sie über Kanten vor dem Gegner platzen.",
+  "Lerne Flashes, die direkt über der Position des Gegners explodieren.",
+  "Übe Flash-Lineups mit 'sv_grenade_trajectory_prac_pipreview 1' im privaten Match."
+ ],
+ "flash_kills": [
+  "Flash für einen Teammate, der direkt danach peekt – sprecht euch kurz ab.",
+  "Peek selbst sofort nach deiner Pop-Flash, solange der Gegner noch geblendet ist.",
+  "Demo-Review: Wie viele deiner Flashes wurden gar nicht genutzt, weil keiner gepeekt hat?"
+ ],
+ "flash_assists": [
+  "Sagt Flashes an: 'Flash in 3' – so kann dein Teammate direkt danach peeken.",
+  "Lerne pro Map 1–2 Support-Flashes für eure häufigsten Executes.",
+  "Wirf Flashes für den Entry-Spieler statt für dich selbst."
+ ],
+ "team_flash": [
+  "Vor dem Werfen ansagen ('Flash!'), damit Teammates wegschauen.",
+  "Lerne Flashes, die nur die Gegner-Seite treffen (über Kanten statt direkt in den Gang).",
+  "Demo-Review: In welcher Situation hast du deine Teammates geblendet?"
+ ],
+ "he_damage": [
+  "Wirf HE-Granaten auf Stack-Positionen, auf die Gegner gleichzeitig laufen (z. B. nach Sound-Info).",
+  "Kombiniere HE und Molotov auf dieselbe Position.",
+  "Lerne 2 Standard-HE-Würfe pro Map (z. B. auf Rush-Wege in den ersten Sekunden)."
+ ],
+ "he_team": [
+  "Vor dem Werfen einer HE ansagen, damit Teammates nicht in die Explosion laufen.",
+  "Keine HE auf Positionen, auf die dein Team gerade vorrückt.",
+  "Demo-Review: Wann hast du deinem Team Schaden gemacht, und hättest du warten können?"
+ ],
+ "util_death": [
+  "Setz deine Utility ein, bevor du in ein Duell gehst – ungenutzte Granaten sind verschenktes Geld.",
+  "Kaufe nur die Utility, für die du in dieser Runde einen Plan hast.",
+  "Wenn du wenig HP hast: Gib deine Granaten an Teammates weiter oder wirf sie sofort."
+ ],
+
+ "trade_kills": [
+  "Bleib in Trade-Reichweite deines Teammates: nicht mehr als einen Winkel entfernt.",
+  "Wenn dein Teammate peekt, halte den Winkel direkt dahinter bereit.",
+  "Demo-Review: Wie lange hast du nach dem Tod deines Teammates gebraucht, bis du geschossen hast?"
+ ],
+ "traded_deaths": [
+  "Peek nicht allein: Warte, bis ein Teammate in Trade-Reichweite ist.",
+  "Sag vor dem Peek an, was du tust, damit dein Team nachziehen kann.",
+  "Demo-Review: Wie weit waren deine Teammates bei deinen Toden entfernt?"
+ ],
+ "trade_opps": [
+  "Spielt enger zusammen – vor allem auf T bei Executes.",
+  "Sucht nach dem Tod eines Teammates aktiv das Trade-Duell, statt zurückzufallen.",
+  "Demo-Review: Wo standest du, als dein Teammate starb?"
+ ],
+
+ "ct_opening": [
+  "Auf CT nicht jede Runde aggressiv peeken – ein Opening-Tod auf CT kostet oft die ganze Site.",
+  "Halte Winkel, die der Gegner nicht pre-aimt (Offangles), aber wechsle sie regelmäßig.",
+  "Nutze Utility (Molotov, Flash), bevor du auf CT aggressiv wirst."
+ ],
+ "t_opening": [
+  "Entry nur mit Flash oder direkt nach einem Teammate-Kontakt.",
+  "yprac-Prefire-Maps: die gängigen CT-Positionen pre-aimen.",
+  "Wenn es schlecht läuft, übernimm lieber die Trader-Rolle (zweiter in die Site)."
+ ],
+ "ct_aggression": [
+  "Aggressive CT-Pushes nur mit Info oder Utility, nicht blind.",
+  "Nach einem erfolgreichen Push sofort zurück – nicht zweimal in derselben Runde.",
+  "Demo-Review: Welche deiner aggressiven Plays hatten einen Grund, welche nicht?"
+ ],
+ "t_aggression": [
+  "Aggressive T-Plays nur mit Flash-Unterstützung.",
+  "Variiere das Timing: Früh, spät, Fake – nicht jede Runde gleich.",
+  "Demo-Review: Wo standen die CTs, wenn deine Opening-Duelle verloren gingen?"
+ ],
+ "survived": [
+  "Nicht jede Runde muss ein Duell sein: In verlorenen Runden (z. B. 1v4) die Waffe retten.",
+  "Nach einem Kill die Position wechseln, statt denselben Winkel noch mal zu peeken.",
+  "Demo-Review: Welche deiner Tode sind passiert, obwohl die Runde schon entschieden war?"
+ ]
+}
