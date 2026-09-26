@@ -3,7 +3,7 @@
 Meine persönliche CS2-Statistik-Seite mit Daten von [Leetify](https://leetify.com).
 Sie aktualisiert sich jeden Montag früh automatisch, zeigt meinen Verlauf und gibt mir Trainingstipps.
 
-**Seite:** https://schmosbie.github.io/cs2-stats/
+**Seite:** https://schmosbie.github.io/CS2-Stats/
 
 ## So funktioniert es
 
@@ -90,6 +90,11 @@ Mit `match` gibt es einen Wochenverlauf aus deinen Matches, und der Stat kann be
 Mit nur `profile` entsteht der Verlauf aus den wöchentlichen Snapshots.
 Neue Kacheln in der Übersicht trägst du oben in `"overview"` ein.
 
+## Welche Spielmodi zählen?
+
+Wingman (2v2) ist ausgeklammert, weil es Werte wie ADR und K/D verzerrt. Premier und Competitive zählen mit.
+Ändern kannst du das in `data/stats.json` unter `"excludeSources"`.
+
 ## Wie werden „schwach“ und „gefallen“ berechnet?
 
 - Die Leetify-API liefert **keine Vergleichswerte** (z. B. einen Durchschnitt für deinen Rang). Verglichen wird deshalb mit **deinem eigenen Durchschnitt** über alle gespeicherten Matches.
@@ -101,7 +106,7 @@ Neue Kacheln in der Übersicht trägst du oben in `"overview"` ein.
 
 - Gesamten Utility-Schaden (nur HE-Schaden, kein Molotov-Schaden)
 - Vergleichswerte von Leetify für deinen Rang
-- Premier-Rating pro Match für ältere Matches. Der Premier-Verlauf beginnt mit den wöchentlichen Snapshots.
+- Premier-Rating gibt es nur für die letzten 100 Matches. Ältere Werte bleiben erhalten, weil jeder Snapshot sie speichert.
 
 ## Lokal ansehen (optional)
 

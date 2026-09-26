@@ -2,7 +2,8 @@
 // und baut daraus die 5 Reiter. Kein Build-Schritt nötig.
 
 const DAY = 24 * 60 * 60 * 1000;
-const RECENT_N = 10; // "Aktuelle Form" = die letzten 10 Matches (Tipps-Reiter)
+const RECENT_N = 10;
+const MODES = { matchmaking: 'Premier', matchmaking_competitive: 'Competitive', matchmaking_wingman: 'Wingman', faceit: 'FACEIT' }; // "Aktuelle Form" = die letzten 10 Matches (Tipps-Reiter)
 
 let H;      // history.json
 let STATS;  // stats.json -> stats
@@ -96,13 +97,36 @@ function evalStat(key) {
 
   if (stat.profile) {
     const snaps = H.snapshots.map((s) => ({ date: s.date, v: get(s, stat.profile) })).filter((p) => isNum(p.v));
-    const sc = scaleFor(stat.format, snaps.map((p) => p.v));
+    const sc = stat.profileScale ?? scaleFor(stat.format, snaps.map((p) => p.v));
     snaps.forEach((p) => (p.v *= sc));
     r.snapSeries = snaps;
     r.profileValue = snaps.length ? snaps[snaps.length - 1].v : null;
   }
 
-  if (stat.match && MATCHES.length) {
+  if (stat.rankType) {
+    // Rang (z. B. Premier) pro Match aus den "recent_matches" aller Snapshots.
+    // Pro Woche zählt das Rating nach dem letzten Match der Woche.
+    const byId = {};
+    for (const s of H.snapshots) {
+      for (const m of s.recent_matches || []) {
+        if (m.rank_type === stat.rankType && m.rank > 0) byId[m.id] = { t: Date.parse(m.date), v: m.rank };
+      }
+    }
+    const ranks = Object.values(byId).sort((a, b) => a.t - b.t);
+    const lastBefore = (t) => { const l = ranks.filter((x) => x.t <= t); return l.length ? l[l.length - 1].v : null; };
+    if (ranks.length) {
+      const weeks = Math.min(104, Math.ceil((REF - ranks[0].t) / (7 * DAY)));
+      for (let k = weeks; k >= 0; k--) {
+        const end = REF - k * 7 * DAY, start = end - 7 * DAY;
+        const n = ranks.filter((x) => x.t > start && x.t <= end).length;
+        r.series.push({ date: start, v: n ? lastBefore(end) : null, n });
+      }
+      r.current = r.profileValue ?? ranks[ranks.length - 1].v;
+      r.previous = lastBefore(REF - 7 * DAY);
+      r.nCur = r.series[r.series.length - 1].n;
+      r.source = 'rank';
+    }
+  } else if (stat.match && MATCHES.length) {
     // Verlauf: ein Punkt pro Woche, aus den Matches berechnet.
     const perMatch = MATCHES.map((m) => matchValue(stat, m)).filter(isNum);
     // Selbst berechnete Anteile (Summe/Summe, Winrate) sind immer 0–1.
@@ -120,7 +144,8 @@ function evalStat(key) {
     r.current = cur?.v ?? null; r.nCur = cur?.n ?? 0;
     r.previous = prev?.v ?? null; r.nPrev = prev?.n ?? 0;
     r.source = 'match';
-  } else if (r.snapSeries) {
+  }
+  if (!r.source && r.snapSeries) {
     // Nur Leetify-Profilwert vorhanden: Verlauf aus den wöchentlichen Snapshots.
     const s = r.snapSeries;
     r.series = s.map((p) => ({ date: Date.parse(p.date), v: p.v }));
@@ -176,7 +201,7 @@ function lineChart(canvas, r, color) {
           callbacks: {
             title: (items) => {
               const p = pts[items[0].dataIndex];
-              return r.source === 'match' ? `Woche ab ${fmtDate(p.date)}` : `Snapshot ${fmtDate(p.date)}`;
+              return r.source !== 'profile' ? `Woche ab ${fmtDate(p.date)}` : `Snapshot ${fmtDate(p.date)}`;
             },
             label: (item) => {
               const p = pts[item.dataIndex];
@@ -219,7 +244,7 @@ function renderOverview(cfg) {
   const kpis = $('kpis');
   for (const key of cfg.overview) {
     const r = evalStat(key);
-    const sub = r.source === 'match' ? `${r.nCur} Matches (letzte 7 Tage)` : r.source === 'profile' ? 'aktueller Stand' : 'keine Daten';
+    const sub = r.source === 'match' || r.source === 'rank' ? `${r.nCur} Matches (letzte 7 Tage)` : r.source === 'profile' ? 'aktueller Stand' : 'keine Daten';
     kpis.insertAdjacentHTML('beforeend', `
       <div class="kpi">
         <div class="label">${esc(r.stat.label)}</div>
@@ -248,6 +273,10 @@ function renderOverview(cfg) {
     <p class="note">Letzte 7 Tage (${cur} Matches) im Vergleich zur Woche davor (${prev} Matches). Gezeigt werden die deutlichsten Veränderungen,
     gemessen an deiner normalen Schwankung von Match zu Match.</p>${body}`;
 
+  // Verlauf der Hauptwerte
+  const grid = $('overview-charts');
+  cfg.overview.forEach((k) => grid.appendChild(chartCard(k)));
+
   // Letzte Matches
   const S = (k) => STATS[k];
   const rows = MATCHES.slice(-10).reverse().map((m) => {
@@ -255,14 +284,14 @@ function renderOverview(cfg) {
     const adr = m.s.rounds_count > 0 ? m.s.total_damage / m.s.rounds_count : null;
     const rating = isNum(m.s.leetify_rating) ? m.s.leetify_rating * (evalStat('leetify').scale || 1) : null;
     return `<tr><td>${fmtDate(m.date)}</td><td>${esc(mapName(m.map))}</td>
-      <td class="res ${m.result}">${{ W: 'Sieg', L: 'Niederlage', T: 'Unentsch.' }[m.result]}</td>
+      <td>${MODES[m.source] || esc(m.source)}</td><td class="res ${m.result}">${{ W: 'Sieg', L: 'Niederlage', T: 'Unentsch.' }[m.result]}</td>
       <td class="num">${m.score.join(':')}</td>
       <td class="num">${m.s.total_kills ?? '–'}/${m.s.total_deaths ?? '–'}/${m.s.total_assists ?? '–'}</td>
       <td class="num">${fmt(S('adr'), adr)}</td><td class="num">${fmt(S('hs'), hs)}</td>
       <td class="num">${fmt(S('leetify'), rating)}</td></tr>`;
   });
   $('recent-matches').innerHTML = rows.length
-    ? `<thead><tr><th>Datum</th><th>Map</th><th>Ergebnis</th><th class="num">Score</th><th class="num">K/D/A</th>
+    ? `<thead><tr><th>Datum</th><th>Map</th><th>Modus</th><th>Ergebnis</th><th class="num">Score</th><th class="num">K/D/A</th>
        <th class="num">ADR</th><th class="num">HS %</th><th class="num">Rating</th></tr></thead><tbody>${rows.join('')}</tbody>`
     : '<tr><td>Noch keine Matches gespeichert.</td></tr>';
 }
@@ -434,7 +463,8 @@ async function main() {
   }
   STATS = cfg.stats;
   H.snapshots ||= [];
-  MATCHES = Object.values(H.matches || {}).filter((m) => m.date).sort((a, b) => a.date.localeCompare(b.date));
+  const excluded = cfg.excludeSources || [];
+  MATCHES = Object.values(H.matches || {}).filter((m) => m.date && !excluded.includes(m.source)).sort((a, b) => a.date.localeCompare(b.date));
   REF = Date.parse(H.lastSuccess) || Date.now();
 
   Chart.defaults.color = '#8b95a5';

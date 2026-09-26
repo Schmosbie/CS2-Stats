@@ -90,7 +90,7 @@ h3 { margin: 0; font-size: 17px; }
 .summary-cols h3.bad { color: var(--bad); }
 
 /* Diagramm-Karten */
-.charts { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 14px; }
+.charts { margin-bottom: 16px; display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 14px; }
 .chart-card { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; }
 .chart-card header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 .chart-card .big { font-family: Rajdhani, sans-serif; font-size: 26px; font-weight: 700; }

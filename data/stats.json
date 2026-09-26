@@ -1,9 +1,11 @@
 {
  "_hilfe": "Liste aller Stats, die die Seite anzeigt. Erklärung der Felder: siehe README.md, Abschnitt 'Einen Stat hinzufügen'.",
  "overview": ["premier", "leetify", "winrate", "kd", "adr", "hs"],
+ "excludeSources": ["matchmaking_wingman"],
+ "_excludeSources_hilfe": "Spielmodi, die nicht in die Stats einfließen. Mögliche Werte: matchmaking (Premier), matchmaking_competitive, matchmaking_wingman. Leere Liste [] = alle Modi.",
  "stats": {
-  "premier":        { "label": "Premier-Rating", "group": "overview", "format": "int", "better": "high", "profile": "ranks.premier" },
-  "leetify":        { "label": "Leetify-Rating", "group": "overview", "format": "rating", "better": "high", "match": "leetify_rating", "desc": "Durchschnitt deines Leetify-Ratings pro Match" },
+  "premier":        { "label": "Premier-Rating", "group": "overview", "format": "int", "better": "high", "profile": "ranks.premier", "rankType": 11, "desc": "Rating nach deinem letzten Premier-Match der Woche" },
+  "leetify":        { "label": "Leetify-Rating", "group": "overview", "format": "rating", "better": "high", "match": "leetify_rating", "profile": "ranks.leetify", "profileScale": 1, "desc": "Durchschnitt deines Leetify-Ratings pro Match" },
   "winrate":        { "label": "Winrate", "group": "overview", "format": "pct", "better": "high", "match": { "type": "winrate" } },
   "kd":             { "label": "K/D", "group": "overview", "format": "dec2", "better": "high", "match": { "num": "total_kills", "den": "total_deaths" } },
   "adr":            { "label": "ADR", "group": "overview", "format": "dec1", "better": "high", "match": { "num": "total_damage", "den": "rounds_count" }, "desc": "Schaden pro Runde" },
@@ -27,7 +29,7 @@
   "blinded":        { "label": "Geblendete Gegner pro Match", "group": "utility", "format": "dec1", "better": "high", "match": "flashbang_hit_foe" },
   "flash_eff":      { "label": "Gegner geblendet pro Flash", "group": "utility", "format": "dec2", "better": "high", "profile": "stats.flashbang_hit_foe_per_flashbang", "match": { "num": "flashbang_hit_foe", "den": "flashbang_thrown" } },
   "flash_duration": { "label": "Blenddauer pro Gegner", "group": "utility", "format": "sec", "better": "high", "profile": "stats.flashbang_hit_foe_avg_duration", "match": "flashbang_hit_foe_avg_duration" },
-  "flash_kills":    { "label": "Flashes, die zu Kills führen (pro Match)", "group": "utility", "format": "dec2", "better": "high", "match": "flashbang_leading_to_kill" },
+  "flash_kills":    { "label": "Flashes, die zu Kills führen", "group": "utility", "format": "pct", "better": "high", "profile": "stats.flashbang_leading_to_kill", "match": { "num": "flashbang_leading_to_kill", "den": "flashbang_thrown" }, "desc": "Anteil deiner Flashes, nach denen ein Gegner stirbt" },
   "flash_assists":  { "label": "Flash-Assists pro Match", "group": "utility", "format": "dec2", "better": "high", "match": "flash_assist" },
   "team_flash":     { "label": "Teammates geblendet pro Flash", "group": "utility", "format": "dec2", "better": "low", "profile": "stats.flashbang_hit_friend_per_flashbang", "match": { "num": "flashbang_hit_friend", "den": "flashbang_thrown" } },
   "he_damage":      { "label": "HE-Schaden an Gegnern", "group": "utility", "format": "dec1", "better": "high", "profile": "stats.he_foes_damage_avg", "match": "he_foes_damage_avg", "desc": "Durchschnittlicher Schaden pro HE-Granate" },
