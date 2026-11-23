@@ -1,7 +1,7 @@
 {
  "steam64_id": "76561198123315543",
- "lastSuccess": "2026-11-16T13:04:17.992Z",
- "lastAttempt": "2026-11-16T13:04:17.992Z",
+ "lastSuccess": "2026-11-23T15:13:58.106Z",
+ "lastAttempt": "2026-11-23T15:13:58.106Z",
  "lastError": null,
  "snapshots": [
   {
@@ -7953,6 +7953,952 @@
      "map": "de_dust2",
      "rank": 0,
      "rank_type": null,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "8bd9e4c8-bc23-46ed-9743-7aa2a1cecefa",
+     "date": "2026-10-29T19:32:57.000Z",
+     "map": "de_mirage",
+     "rank": 21159,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "36a420e8-e8de-41af-9662-807a806c91d8",
+     "date": "2026-10-29T18:52:54.000Z",
+     "map": "de_dust2",
+     "rank": 21530,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "5aa65057-389b-4761-827d-34b3e7f476a9",
+     "date": "2026-10-29T17:32:19.000Z",
+     "map": "de_mirage",
+     "rank": 15,
+     "rank_type": 12,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "0bcb16e8-df01-4bb0-a5fc-36dc79dce600",
+     "date": "2026-10-28T20:17:45.000Z",
+     "map": "de_mirage",
+     "rank": 21872,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "ad4d1224-5460-423b-b1f4-79b82ba2c1ca",
+     "date": "2026-10-28T19:33:05.000Z",
+     "map": "de_anubis",
+     "rank": 21520,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "1c42d207-e27c-41ae-b52b-e06d6f00ccc7",
+     "date": "2026-10-28T19:01:50.000Z",
+     "map": "de_ancient",
+     "rank": 21842,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "f00defee-b859-4583-b219-ed95f8aac624",
+     "date": "2026-10-26T21:01:18.000Z",
+     "map": "de_inferno",
+     "rank": 22254,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "7d632f6d-c2c6-4360-be16-b0ab64734811",
+     "date": "2026-10-26T20:16:24.000Z",
+     "map": "de_mirage",
+     "rank": 22454,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "b5c477f0-3c6a-433c-94c8-e3a33fc8662b",
+     "date": "2026-10-26T19:41:55.000Z",
+     "map": "de_mirage",
+     "rank": 22084,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "05e0d456-df29-4dda-bb2d-84eee2a33ea3",
+     "date": "2026-10-26T19:05:34.000Z",
+     "map": "de_dust2",
+     "rank": 21721,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "8061eeee-3005-4cb3-b68e-337871e4ba9b",
+     "date": "2026-10-26T18:25:09.000Z",
+     "map": "de_inferno",
+     "rank": 21368,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "e767875a-a23e-48cc-a677-cd42ec8ab1cf",
+     "date": "2026-10-26T17:20:56.000Z",
+     "map": "de_dust2",
+     "rank": 10,
+     "rank_type": 12,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "b6038c7b-0dea-42a3-b37b-941a0bc39213",
+     "date": "2026-10-22T19:06:39.000Z",
+     "map": "de_inferno",
+     "rank": 20998,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "7bec0ada-4c87-49ec-b206-9876e902870e",
+     "date": "2026-10-22T18:21:04.000Z",
+     "map": "de_inferno",
+     "rank": 20634,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "797e3f6b-2159-4d45-ab8a-fd9e9cf3a880",
+     "date": "2026-10-22T17:36:24.000Z",
+     "map": "de_dust2",
+     "rank": 20267,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "0464ce4f-0ed9-452c-ad14-afc05b7eab60",
+     "date": "2026-10-22T16:58:30.000Z",
+     "map": "de_cache",
+     "rank": 20631,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "c4653fa5-9f88-43bf-be49-668014f66264",
+     "date": "2026-10-19T18:48:02.000Z",
+     "map": "de_ancient",
+     "rank": 21005,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "7c9ac780-7529-4043-afb4-af34ece1ec1f",
+     "date": "2026-10-19T18:19:51.000Z",
+     "map": "de_inferno",
+     "rank": 21326,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "8e653e1c-fbaa-4100-8ec5-ad2786d12674",
+     "date": "2026-10-19T17:35:58.000Z",
+     "map": "de_mirage",
+     "rank": 21654,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "08fd0f11-8df2-49aa-9cc0-35d88bf610e5",
+     "date": "2026-10-19T16:44:52.000Z",
+     "map": "de_dust2",
+     "rank": 0,
+     "rank_type": 12,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "c9410527-5950-4d22-89d0-a76ccd530c7c",
+     "date": "2026-10-18T19:24:36.000Z",
+     "map": "de_dust2",
+     "rank": 21423,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "22a18c95-1799-417b-91be-1d08a3dd5b78",
+     "date": "2026-10-18T18:41:50.000Z",
+     "map": "de_inferno",
+     "rank": 21743,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "40db3ba1-ee8f-4b12-82cb-153a2d5bdfea",
+     "date": "2026-10-18T18:15:04.000Z",
+     "map": "de_mirage",
+     "rank": 22136,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "0d38998f-cc06-483b-8251-f67ff8756a32",
+     "date": "2026-10-18T17:33:59.000Z",
+     "map": "de_nuke",
+     "rank": 22433,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "9e83ae8b-2a0a-4177-9145-5ad3292dfc44",
+     "date": "2026-10-18T15:41:32.000Z",
+     "map": "de_inferno",
+     "rank": 0,
+     "rank_type": 12,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "91ee2bdb-6351-44d2-81cd-9d92b37582a7",
+     "date": "2026-10-18T15:12:13.000Z",
+     "map": "de_mirage",
+     "rank": 15,
+     "rank_type": 12,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "a9bc35e5-95ca-47d3-98bf-9529e3bd771c",
+     "date": "2026-10-18T14:53:02.000Z",
+     "map": "de_cache",
+     "rank": 14,
+     "rank_type": 12,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "37f11e02-a110-4db7-bad9-9d0daf1fa6bf",
+     "date": "2026-10-14T18:53:17.000Z",
+     "map": "de_inferno",
+     "rank": 22071,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "90007bea-160b-4902-87d9-130d0b367737",
+     "date": "2026-10-14T18:07:17.000Z",
+     "map": "de_inferno",
+     "rank": 22433,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "cd7e4f1a-b0ac-4053-b708-e5583db855d8",
+     "date": "2026-10-14T17:29:18.000Z",
+     "map": "de_cache",
+     "rank": 22097,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "294a978e-b622-4f31-a1b1-2e1601931dcb",
+     "date": "2026-10-14T16:54:17.000Z",
+     "map": "de_inferno",
+     "rank": 21828,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "de82b106-439e-426f-8c07-0dfbbf75b298",
+     "date": "2026-10-13T19:07:56.000Z",
+     "map": "de_dust2",
+     "rank": 21476,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "04fe98ef-da11-46cf-8e27-211b3c67beef",
+     "date": "2026-10-13T18:43:42.000Z",
+     "map": "de_mirage",
+     "rank": 21117,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "1df283ba-03f4-4acb-ba11-48fbfb4f5acc",
+     "date": "2026-10-13T18:03:08.000Z",
+     "map": "de_dust2",
+     "rank": 20933,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "40e74b6f-54db-4c86-8720-0e71a202dfc1",
+     "date": "2026-10-13T17:39:50.000Z",
+     "map": "de_dust2",
+     "rank": 20567,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "e91c36df-f92b-4f33-ae08-6f0222c45dbe",
+     "date": "2026-10-13T17:27:41.000Z",
+     "map": "de_dust2",
+     "rank": 20994,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "cd854abe-d1f6-45da-a781-9862130954bc",
+     "date": "2026-10-07T18:27:44.000Z",
+     "map": "de_inferno",
+     "rank": 20886,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "f6a2c3f4-e6a9-4d8e-be8b-66c6e8e6cefe",
+     "date": "2026-10-07T17:45:44.000Z",
+     "map": "de_mirage",
+     "rank": 20530,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "bcceb93a-b3d8-4ce7-b50f-f51ae8f4f7e0",
+     "date": "2026-10-07T17:07:27.000Z",
+     "map": "de_inferno",
+     "rank": 20738,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "e7420672-8b72-4d57-9327-58ced4bf1732",
+     "date": "2026-10-06T16:57:10.000Z",
+     "map": "de_anubis",
+     "rank": 21114,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "2189bdbc-80a7-4cfc-94cf-e062248e0a9f",
+     "date": "2026-10-06T16:43:16.000Z",
+     "map": "de_dust2",
+     "rank": 20784,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "d687622e-84db-4425-82a2-9759ff94ddc3",
+     "date": "2026-10-05T19:02:25.000Z",
+     "map": "de_anubis",
+     "rank": 21116,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "1c06b06d-b08e-4a33-b950-d41d8c85ad75",
+     "date": "2026-10-05T18:13:19.000Z",
+     "map": "de_inferno",
+     "rank": 21470,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "5afaa199-13d6-40da-bddc-b5465b025c56",
+     "date": "2026-10-02T20:38:24.000Z",
+     "map": "de_inferno",
+     "rank": 21107,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "efb32794-fdd4-434e-bace-6525f8fd3835",
+     "date": "2026-10-02T20:01:23.000Z",
+     "map": "de_ancient",
+     "rank": 0,
+     "rank_type": 12,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "7d8b5e0b-2b3d-4480-8ab7-46070c359db8",
+     "date": "2026-10-02T19:39:29.000Z",
+     "map": "de_dust2",
+     "rank": 0,
+     "rank_type": 12,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "c1ac041d-adb4-46ea-b132-714f75a253af",
+     "date": "2026-10-02T18:58:04.000Z",
+     "map": "de_anubis",
+     "rank": 20772,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "e4ac802c-c986-4d34-a79a-6379adf01733",
+     "date": "2026-10-02T18:50:43.000Z",
+     "map": "de_inferno",
+     "rank": 21119,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "34d48eaa-6dee-449f-99ff-1ca62d8bf83a",
+     "date": "2026-10-02T18:20:18.000Z",
+     "map": "de_inferno",
+     "rank": 20751,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "92ec6fe3-a2ac-486a-8cb8-49e9136fb34a",
+     "date": "2026-10-01T18:13:08.000Z",
+     "map": "de_mirage",
+     "rank": 20448,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "d4990635-9a39-45a5-9218-e9fbc2d5529d",
+     "date": "2026-10-01T17:54:46.000Z",
+     "map": "de_dust2",
+     "rank": 20747,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "eefb0a7e-bf5f-48ca-95ca-9e199d29ba5b",
+     "date": "2026-10-01T17:26:17.000Z",
+     "map": "de_nuke",
+     "rank": 21132,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "7cb3cc14-dde3-427c-a313-f55bb7ae05e6",
+     "date": "2026-10-01T16:57:38.000Z",
+     "map": "de_mirage",
+     "rank": 21019,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "6c1d000e-cdbd-484a-a0fd-424f736f08c7",
+     "date": "2026-09-30T18:51:23.000Z",
+     "map": "de_anubis",
+     "rank": 21240,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "dd91a6d2-279b-492c-908b-c0fc0053cec0",
+     "date": "2026-09-29T19:22:40.000Z",
+     "map": "de_ancient",
+     "rank": 21127,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "401894db-059c-4973-8bab-25b22186cc71",
+     "date": "2026-09-29T18:36:01.000Z",
+     "map": "de_cache",
+     "rank": 21422,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "2f8f1345-3c83-4c39-86c6-71eb59fc811c",
+     "date": "2026-09-29T18:00:09.000Z",
+     "map": "de_ancient",
+     "rank": 21802,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "820d37de-111e-434b-a807-eec626648387",
+     "date": "2026-09-28T18:41:43.000Z",
+     "map": "de_dust2",
+     "rank": 21474,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "41554bdd-9edb-4d42-b80b-fc650b91e133",
+     "date": "2026-09-28T18:04:40.000Z",
+     "map": "de_dust2",
+     "rank": 21104,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "0406ca8d-2fad-4efe-8613-63e73cb2797d",
+     "date": "2026-09-27T15:09:12.000Z",
+     "map": "de_dust2",
+     "rank": 21487,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "e59554e8-d36a-4878-863e-0f604875dc02",
+     "date": "2026-09-27T14:30:30.000Z",
+     "map": "de_cache",
+     "rank": 21753,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "af667953-5e01-474f-8a24-6cb03fcd6b74",
+     "date": "2026-09-27T14:05:00.000Z",
+     "map": "de_anubis",
+     "rank": 21391,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "385cb7c4-0678-4760-89c3-9df7da9fc19f",
+     "date": "2026-09-27T13:30:54.000Z",
+     "map": "de_dust2",
+     "rank": 0,
+     "rank_type": 12,
+     "source": "matchmaking",
+     "outcome": "loss"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-23T15:13:58.106Z",
+   "name": "OTG ✈",
+   "privacy_mode": "public",
+   "total_matches": 1495,
+   "winrate": 0.5714,
+   "ranks": {
+    "leetify": 1.8399999999999999,
+    "premier": 20609,
+    "faceit": 9,
+    "wingman": 17
+   },
+   "rating": {
+    "aim": 75.8036,
+    "positioning": 69.1462,
+    "utility": 68.1923,
+    "clutch": 0.1062,
+    "opening": 0.0035,
+    "ct_leetify": 0.0145,
+    "t_leetify": 0.0225
+   },
+   "stats": {
+    "accuracy_enemy_spotted": 34.5542,
+    "accuracy_head": 18.4649,
+    "counter_strafing_good_shots_ratio": 80.5232,
+    "ct_opening_aggression_success_rate": 54.9215,
+    "ct_opening_duel_success_percentage": 51.5987,
+    "flashbang_hit_foe_avg_duration": 3.0314,
+    "flashbang_hit_foe_per_flashbang": 0.7072,
+    "flashbang_hit_friend_per_flashbang": 0.3097,
+    "flashbang_leading_to_kill": 8.6588,
+    "flashbang_thrown": 9.0091,
+    "he_foes_damage_avg": 10.3394,
+    "he_friends_damage_avg": 0.1945,
+    "preaim": 8.8553,
+    "reaction_time_ms": 567.3181,
+    "spray_accuracy": 38.7613,
+    "t_opening_aggression_success_rate": 64.9164,
+    "t_opening_duel_success_percentage": 44.4242,
+    "traded_deaths_success_percentage": 49.7679,
+    "trade_kill_opportunities_per_round": 0.2831,
+    "trade_kills_success_percentage": 54.1628,
+    "utility_on_death_avg": 370.2268
+   },
+   "recent_matches": [
+    {
+     "id": "e763888d-07cf-4cda-9f01-7d3b316a5bc4",
+     "date": "2026-11-15T15:06:04.000Z",
+     "map": "de_ancient",
+     "rank": 14,
+     "rank_type": 12,
+     "source": "matchmaking",
+     "outcome": "tie"
+    },
+    {
+     "id": "8f65b775-d1fa-4ac1-80d9-e6595ec231e0",
+     "date": "2026-11-15T14:41:00.000Z",
+     "map": "de_dust2",
+     "rank": 10,
+     "rank_type": 12,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "4ec1cf91-d5cd-4cf9-a3a5-4ed5bd8dbdfd",
+     "date": "2026-11-15T14:05:18.000Z",
+     "map": "de_anubis",
+     "rank": 14,
+     "rank_type": 12,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "da7a551a-acbc-4110-8928-833611b2d900",
+     "date": "2026-11-15T13:27:26.000Z",
+     "map": "de_dust2",
+     "rank": 10,
+     "rank_type": 12,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "bebe317c-b8bc-4ccc-b36d-a125441823ef",
+     "date": "2026-11-13T22:04:45.000Z",
+     "map": "de_dust2",
+     "rank": 20609,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "ccaeb781-65c1-414d-b4dc-c871470315d7",
+     "date": "2026-11-13T21:33:06.000Z",
+     "map": "de_inferno",
+     "rank": 12,
+     "rank_type": 12,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "e55a592a-232e-4c1e-8390-e157a7b1395c",
+     "date": "2026-11-13T20:54:17.000Z",
+     "map": "de_dust2",
+     "rank": 20946,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "ce4400c3-5993-4ece-bd7d-4694a9bc0fe9",
+     "date": "2026-11-13T19:57:05.000Z",
+     "map": "de_dust2",
+     "rank": 21280,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "7b6a84f6-ef97-496f-8f11-bebd3dd4bb3e",
+     "date": "2026-11-13T19:24:22.000Z",
+     "map": "de_cache",
+     "rank": 20920,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "d793292e-616f-49a9-9f95-df1486001fb2",
+     "date": "2026-11-13T18:32:30.000Z",
+     "map": "de_dust2",
+     "rank": 21181,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "17eb4013-1235-4e4a-b12a-08a5ae0caca1",
+     "date": "2026-11-11T20:01:15.000Z",
+     "map": "de_dust2",
+     "rank": 21469,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "d5b40a5f-619b-4c6e-8b15-95f9247b2123",
+     "date": "2026-11-11T19:35:45.000Z",
+     "map": "de_nuke",
+     "rank": 21777,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "9b316a8b-e019-4397-9c17-15ec1c5bf363",
+     "date": "2026-11-11T18:50:21.000Z",
+     "map": "de_mirage",
+     "rank": 21412,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "ab099269-ba0c-40d3-98ab-5fa99110216e",
+     "date": "2026-11-11T18:14:20.000Z",
+     "map": "de_nuke",
+     "rank": 21063,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "7ee77989-ff24-4cae-ad06-05d5ff763354",
+     "date": "2026-11-06T21:04:56.000Z",
+     "map": "de_dust2",
+     "rank": 21425,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "tie"
+    },
+    {
+     "id": "63735f0a-5c58-4f52-b1a9-9d5b61b0c452",
+     "date": "2026-11-06T20:19:52.000Z",
+     "map": "de_nuke",
+     "rank": 21479,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "40cbbe9a-451c-45aa-b7d7-4dcd1ab996fd",
+     "date": "2026-11-06T19:30:36.000Z",
+     "map": "de_mirage",
+     "rank": 21751,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "a2cf721f-91ca-47c8-bc61-7c3a0b25ea32",
+     "date": "2026-11-04T20:15:30.000Z",
+     "map": "de_cache",
+     "rank": 21389,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "cd45d166-bdd7-447e-aa7d-b7d536bf209e",
+     "date": "2026-11-04T19:31:16.000Z",
+     "map": "de_dust2",
+     "rank": 21039,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "e669778b-f434-4357-82d3-b1a8400db68c",
+     "date": "2026-11-04T19:04:01.000Z",
+     "map": "de_dust2",
+     "rank": 20751,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "b6dc6bec-c1d6-47d2-8d1b-11bc48b36e28",
+     "date": "2026-11-03T20:18:12.000Z",
+     "map": "de_inferno",
+     "rank": 21046,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "d7f5f6bf-cde0-4c09-b658-7088ee929f52",
+     "date": "2026-11-03T19:19:11.000Z",
+     "map": "de_cache",
+     "rank": 20700,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "e5517f36-2fcc-4293-b4a8-5aeaf70d6dfd",
+     "date": "2026-11-03T18:10:31.000Z",
+     "map": "de_inferno",
+     "rank": 21006,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "0a78da6a-c86d-4ada-86b5-8b07466242a1",
+     "date": "2026-11-02T20:54:03.000Z",
+     "map": "de_nuke",
+     "rank": 20692,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "f0e37e7c-cfe1-4408-abb6-9ee51e913fa5",
+     "date": "2026-11-02T20:17:46.000Z",
+     "map": "de_dust2",
+     "rank": 20942,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "57eb0004-bdff-49e4-b042-3312fa9a3a12",
+     "date": "2026-11-02T19:47:48.000Z",
+     "map": "de_inferno",
+     "rank": 20664,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "cb84e6bc-f0a9-4f8a-afe2-079ffd2ef6e8",
+     "date": "2026-11-02T18:53:54.000Z",
+     "map": "de_dust2",
+     "rank": 20348,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "c22a43d7-02c9-49c4-a9fc-5cb8c316e4fe",
+     "date": "2026-11-02T15:12:41.000Z",
+     "map": "de_dust2",
+     "rank": 20108,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "0ace30da-9888-4fa3-8f7d-74b487db0333",
+     "date": "2026-11-02T14:31:11.000Z",
+     "map": "de_mirage",
+     "rank": 20000,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "7773c012-cb04-4d97-8e89-5fb56d40436f",
+     "date": "2026-11-02T12:41:11.000Z",
+     "map": "de_mirage",
+     "rank": 20108,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "02c2cce5-64b8-43d1-8421-452734940b6c",
+     "date": "2026-11-02T12:03:37.000Z",
+     "map": "de_mirage",
+     "rank": 19999,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "win"
+    },
+    {
+     "id": "dad3b8a7-926d-468f-8d8c-23dd9e1728cf",
+     "date": "2026-11-01T20:24:25.000Z",
+     "map": "de_nuke",
+     "rank": 19888,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "e8453ef0-dca1-4420-92e3-8c32565b7cfa",
+     "date": "2026-11-01T19:30:06.000Z",
+     "map": "de_anubis",
+     "rank": 20000,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "tie"
+    },
+    {
+     "id": "62410b11-6932-4f19-a6a5-4b4b83062d91",
+     "date": "2026-11-01T18:38:36.000Z",
+     "map": "de_inferno",
+     "rank": 20000,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "db96c481-b671-4166-bab9-4ac227447196",
+     "date": "2026-10-30T21:51:08.000Z",
+     "map": "de_inferno",
+     "rank": 20122,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "ee85cdeb-ee83-4c0e-9b48-2a7b055cc47f",
+     "date": "2026-10-30T21:07:12.000Z",
+     "map": "de_mirage",
+     "rank": 20489,
+     "rank_type": 11,
+     "source": "matchmaking",
+     "outcome": "loss"
+    },
+    {
+     "id": "008b64b6-5a58-44a8-9f9d-1d941bb94e06",
+     "date": "2026-10-29T20:07:31.000Z",
+     "map": "de_dust2",
+     "rank": 0,
      "source": "matchmaking",
      "outcome": "win"
     },
